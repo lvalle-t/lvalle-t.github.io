@@ -1,9 +1,407 @@
-<html>
- 
-<body>
-  <h1>Lupita Valle</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lupita's Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="/" id="navbar__logo">
+           Lupita
+        </a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="/" id="navbar__logo">
+           Lupita
+        </a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/prof_clear_circle.png" alt="lupita-valle profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hi There, I'm</p>
+        <h1 class="title">Lupita Valle</h1>
+        <p class="section__text__p2">Computer Science Major</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume_Spring_2023.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/lupita-valle/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/lvalle-t'"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- About Me -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about_me.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>A.S. Associate Degree of Science
+                <br />B.Sc.CS Bachelor's Degree of Computer Science
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello! My name is Lupita Valle. I am a senior at The University of Houston, 
+              pursuing a major in Computer Science and a minor in Mathematics. Throughout 
+              my academic journey, I have had the privilege of working with incredible
+              organizations that have allowed me to hone my skills and gain valuable 
+              experience. As the Marketing Director for Code[Coogs], I was responsible 
+              for organizing events and promoting the organization's mission to build a 
+              stronger community in Computer Science. I have also had the opportunity to
+              teach coding to middle school and elementary students through a company 
+              called She Codes. Aside from my academic and professional endeavors, I enjoy 
+              watching anime, movies, and playing video games. These hobbies provide me with
+              an excellent outlet to relax and recharge.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      /> -->
+    </section>
+    <!-- Experience -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Work Experience</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Computer Science Instructor</h3>
+                  <p>She Codes Outreach Program</p>
+                  <ul>
+                    <li>Led the Introduction to Python course to 30 middle school students</li>
+                    <li>Analyzed and debugged code written by students and provided feedback for improvement</li>
+                    <li>Assisted in data collection to analyze students’ mastery of Python</li>
+                  </ul>
+                </div>
+              </article>
+              </article>
+            </div>
+          </div>
+
+          <!-- activities -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Activities</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Co-Founder and Marketing Director</h3>
+                  <p>Code Coogs Club</p>
+                  <ul>
+                    <li>Coordinated with the President and Vice-Presidents to produce effective strategies to increase club membership</li>
+                    <li> Managed administrative logistics of event planning, including event booking and event promotions </li>
+                    <li>Analyzed data to evaluate the success of the marketing efforts and come up with new ideas to improve brand 
+                      marketing and exposure</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- certifications -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Certifications</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JPMorgan Software Engineering</h3>
+                  <p>Virtual Experience Program on Forage</p>
+                  <ul>
+                    <li>Used Perspective data visualization software and Python to monitor stock price trends and create trading strategies</li>
+                  </ul>
+                  
+                </div>
+                
+              </article>
+              <button
+                    class="btn btn-color-2 project-btn btn-cent"
+                    onclick="window.open('./assets/J.P. Morgan_completion_certificate_forage.pdf')"
+                    >
+                      Certificate
+                  </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      /> -->
+    </section>
+    <!-- Projects -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/portfolio website.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Portfolio Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lvalle-t/lvalle-t.github.io'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/knn_analysis.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">K-Nearest Neighbors & Support Vector Machine</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lvalle-t'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/socket_port.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Server & Client C++ Implementation</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lvalle-t/COSC_3360_Hws/tree/master/PA2'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/multithreading.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Multithreading</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lvalle-t/COSC_3360_Hws/tree/master/PA1'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Fuel Rate Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lvalle-t/Software-Design-Project'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:lupitavalle713@gmail.com">lupitavalle713@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/lupita-valle/">LinkedIn</a></p>
+        </div>
+      </div>
+      <!-- <div class="form">
+        <h1>Contact Us</h1> 
+        <form action="https://formsubmit.co/lupitavalle713@gmail.com" method="POST">
+          <input type="text" name="name" required placeholder="Name">
+          <input type="email" name="email" required  placeholder="Email">
+          <input type="text" name="subject" required  placeholder="Subject">
+          <textarea name="msg" required placeholder="Message"></textarea>
+          <button type="submit">Submit</button>
+
+        </form>
+      </div> -->
+    </section>
+    <!-- footer -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- <p>Copyright &#169; 2023 Lupita Valle. All Rights Reserved.</p> -->
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
