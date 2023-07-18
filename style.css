@@ -10,6 +10,7 @@
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
   monospace;
 }
+
 body{
   /* background-color:
   rgba(241,235,225,255);
@@ -20,9 +21,8 @@ body{
 
 html {
   scroll-behavior: smooth;
-  /* scroll-padding-top: 60px; */
-}
 
+}
 
 .navbar{
   top: 0;
@@ -33,39 +33,22 @@ html {
   display: flex;
   z-index:100; 
   justify-content: space-around;
-  /* align-items: center; */
+
 }
 
 .navbar__container {
   gap: 2rem;
   display: flex;
-  /* color: rgb(85, 85, 85); */
-  /* justify-content: space-between */
-  /* background-color: hsl(165,60%, 40%); */
   justify-content: space-around;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
   padding:0;
   margin:0;
-  /* margin-right: auto; */
-  /* margin-left: auto; */
-  /* padding-right: 50px; */
-  /* padding-left: 50px;  */
-  
 }
 
 
 #navbar__logo {
-  /* background-color: #7FFFD4;
-  background-image: linear-gradient(to top, #33ffba 0%, #b2ffe5 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-   */
-
   font-size: 2rem;
   align-items: center;
   display: flex;
@@ -82,15 +65,10 @@ html {
   text-align: center;
   text-align: left;
 }
-
-/* .navbar_menu active{
-
-} */
   
 .navbar__item {
   height: 80px;
-  /* background-color: blueviolet; */
-  /* align-items: flex-start; */
+
 }
 
 .navbar__links {
@@ -99,13 +77,10 @@ html {
   gap: 2rem;
   transition: all 0.3s ease;
   color: hsl(165,60%, 40%);
-
-  /* not sure if you need this bottom parts */
   align-items: center;
   justify-content: center;
   height: 100%;
-  /* background-color: #d8c3a5; */
-  /* background-color: aqua; */
+
 }
 
 
@@ -241,6 +216,18 @@ section {
   gap: 1rem;
 }
 
+.btn-color-3{
+  border: rgb(255, 255, 255) 0.1rem solid;
+  background: none;
+  color: rgb(255, 255, 255);
+  
+}
+
+.btn-color-3:hover{
+  cursor: pointer;
+
+}
+
 /* ABOUT SECTION */
 
 #about {
@@ -356,8 +343,6 @@ article .icon {
 }
 
 .icons-container div{
-  /* height: 15rem;
-  width: 15rem; */
   padding: 1.5rem;
   flex: 1;
   border-radius: 2rem;
@@ -366,16 +351,11 @@ article .icon {
   justify-content: center;
   margin: 20px;
   background: white;
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
   margin-bottom: -5px;
-  
 }
 .icon_skills{
   height: 100%;
   width: 100%;
-  /* background-color: red; */
-  /* flex-wrap: wrap; */
   min-width: 3rem;
   min-height: 3rem;
   
@@ -418,10 +398,7 @@ article .icon {
 }
 
 
-
 /* CONTACT */
-
-
 #contactme {
   position: relative;
   padding-top: 13vh;
@@ -433,13 +410,10 @@ article .icon {
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
-  /* background-color: #fafafa; */
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  
 }
 
 .container div{
@@ -579,7 +553,19 @@ textarea.input {
   position: relative;
 }
 
-.contact-info .title {
+.information a{
+  color: hsl(165,60%, 40%);
+  text-decoration: none;
+}
+.information a:hover{
+  text-decoration-color: hsl(165,60%, 40%);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-info 
+.title {             
   color: hsl(165,60%, 40%);
 }
 
@@ -607,5 +593,3 @@ textarea.input {
   right: 50px;
   opacity: 0.3;
 }
-
-

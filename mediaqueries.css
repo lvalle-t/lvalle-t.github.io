@@ -247,34 +247,6 @@
   }
 }
 
-/* @media screen and (max-width: 300px){
-  .icons-container{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .icons-container div{
-    
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    justify-content: center;
-    margin: 20px;
-  }
-  .icon_skills{
-    height: 100%;
-    width: 100%;
-  }
-  .text_skills{
-    text-align: center;
-    
-  }
-} */
-
-
 @media (max-width: 850px) {
   .form {
     grid-template-columns: 1fr;
@@ -319,8 +291,6 @@
   .social-media p {
     font-size: 0.8rem;
   }
-
-  
 
   .social-icons a {
     width: 30px;
