@@ -7,64 +7,62 @@
     <title>Lupita's Website</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">
-        <a href="/" id="navbar__logo">
-           Lupita
-        </a>
-      </div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">Lupita</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#experience" class="navbar__links" id="skills-page">Experience</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#skills" class="navbar__links" id="skills-page">Skills</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contactme" class="navbar__links" id="contact">Contact</a>
+          </li>
+          
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">
-        <a href="/" id="navbar__logo">
-           Lupita
-        </a>
-      </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
 
-    <!-- Profile -->
-    <section id="profile">
+     <!-- Profile -->
+     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/prof_clear_circle.png" alt="lupita-valle profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hi There, I'm</p>
         <h1 class="title">Lupita Valle</h1>
-        <p class="section__text__p2">Computer Science Major</p>
+        <p class="section__text__p2">I'm a Computer Science Major</p>
+
         <div class="btn-container">
-          <button
+          <!-- <button
             class="btn btn-color-2"
             onclick="window.open('./assets/Resume_Spring_2023.pdf')"
           >
             Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          </button> -->
+          <button class="btn btn-color-1" onclick="location.href='./#contactme'">
             Contact Info
           </button>
         </div>
+
+
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
@@ -83,7 +81,7 @@
     </section>
     <!-- About Me -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
+      <p class="section__text__p1">Get to know me!</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
@@ -91,49 +89,67 @@
             src="./assets/about_me.png"
             alt="Profile picture"
             class="about-pic"
-          />
+            />
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>A.S. Associate Degree of Science
+      <div class="about-details-container">
+
+        <!-- <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>A.S. Associate Degree of Science
                 <br />B.Sc.CS Bachelor's Degree of Computer Science
-              </p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hello! My name is Lupita Valle. I am a senior at The University of Houston, 
-              pursuing a major in Computer Science and a minor in Mathematics. Throughout 
-              my academic journey, I have had the privilege of working with incredible
-              organizations that have allowed me to hone my skills and gain valuable 
-              experience. As the Marketing Director for Code[Coogs], I was responsible 
-              for organizing events and promoting the organization's mission to build a 
-              stronger community in Computer Science. I have also had the opportunity to
-              teach coding to middle school and elementary students through a company 
-              called She Codes. Aside from my academic and professional endeavors, I enjoy 
-              watching anime, movies, and playing video games. These hobbies provide me with
-              an excellent outlet to relax and recharge.
             </p>
           </div>
+        </div> -->
+
+        <div class="text-container">
+          <p>
+
+            <!-- font bigger looks empty in norma sizes -->
+              Hello! My name is Lupita Valle. I am a senior at The University of Houston, 
+                pursuing a major in Computer Science and a minor in Mathematics. Throughout 
+                my academic journey, I have had the privilege of working with incredible
+                organizations that have allowed me to hone my skills and gain valuable 
+                experience. As the Marketing Director for Code[Coogs], I was responsible 
+                for organizing events and promoting the organization's mission to build a 
+                stronger community in Computer Science. I have also had the opportunity to
+                teach coding to middle school and elementary students through a company 
+                called She Codes. Aside from my academic and professional endeavors, I enjoy 
+                watching anime, movies, and playing video games. These hobbies provide me with
+                an excellent outlet to relax and recharge.
+          </p>
         </div>
+          
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume_Spring_2023.pdf')"
+          >
+            Download CV
+          </button>
+          <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button> -->
+        </div>
+
       </div>
-      <!-- <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      /> -->
-    </section>
-    <!-- Experience -->
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
+
+      
+    </div>
+        
+        
+
+
+
+      </section>
+     <!-- Experience -->
+     <section id="experience">
+      <!-- <p class="section__text__p1">Explore My</p> -->
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -222,9 +238,79 @@
         onclick="location.href='./#projects'"
       /> -->
     </section>
+
+    
+    <!-- Skills -->
+
+    <section id="skills">
+      <!-- https://worldvectorlogo.com/downloaded/tailwindcss -->
+      <h1 class="title">Skills</h1>
+      <div class="icons-container">
+        <div class="text_skills">
+          <img src="./assets/python-5.svg" alt="pythonicon"  class="icon_skills" />
+            Python
+        </div>
+         <div class="text_skills">
+          <img src="./assets/c++.svg" alt="c++icon"  class="icon_skills" />
+            C++
+        </div>
+
+        
+        <div class="text_skills">
+          <img src="./assets/html-1.svg" alt="html-icon"  class="icon_skills" />
+            HTML
+        </div> 
+        <div class="text_skills">
+          <img src="./assets/css-3.svg" alt="css-3-icon"  class="icon_skills" />
+            CSS3
+        </div>
+        <div class="text_skills">
+          <img src="./assets/logo-javascript.svg" alt="Javascript-icon"  class="icon_skills" />
+            Javascript
+        </div>
+        <div class="text_skills">
+          <img src="./assets/nodejs-icon.svg" alt="nodejs-icon"  class="icon_skills" />
+            Node.js
+        </div> 
+        <div class="text_skills">
+          <img src="./assets/tailwindcss.svg" alt="tailwind-icon"  class="icon_skills" />
+            TailwindCSS
+        </div> 
+        <div class="text_skills">
+          <img src="./assets/github-icon-1.svg" alt="github-icon"  class="icon_skills" />
+            Github
+        </div> 
+
+
+        <!-- testing -->
+        <!-- will have to learn 3 new skills to make it work or remove 4 skills  -->
+
+        <!-- <div class="text_skills">
+          <img src="./assets/nodejs-icon.svg" alt="nodejs-icon"  class="icon_skills" />
+            Node.js
+        </div> -->
+        <div class="text_skills">
+          <img src="./assets/nodejs-icon.svg" alt="nodejs-icon"  class="icon_skills" />
+            Node.js
+        </div>  
+
+        <!-- learn this  -->
+
+        <div class="text_skills">
+          <img src="./assets/react-2.svg" alt="react-icon"  class="icon_skills" />
+            React
+        </div> 
+         
+      </div>
+      </div>
+
+
+    </section>
+
+
     <!-- Projects -->
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
+      <!-- <p class="section__text__p1">Browse My Recent</p> -->
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -245,31 +331,6 @@
               >
                 Github
               </button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/knn_analysis.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">K-Nearest Neighbors & Support Vector Machine</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/lvalle-t'"
-              >
-                Github
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
             </div>
           </div>
 
@@ -355,53 +416,74 @@
     </section>
 
     <!-- Contact Me -->
-    <section id="contact">
+    <section id="contactme">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:lupitavalle713@gmail.com">lupitavalle713@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/lupita-valle/">LinkedIn</a></p>
-        </div>
-      </div>
-      <!-- <div class="form">
-        <h1>Contact Us</h1> 
-        <form action="https://formsubmit.co/lupitavalle713@gmail.com" method="POST">
-          <input type="text" name="name" required placeholder="Name">
-          <input type="email" name="email" required  placeholder="Email">
-          <input type="text" name="subject" required  placeholder="Subject">
-          <textarea name="msg" required placeholder="Message"></textarea>
-          <button type="submit">Submit</button>
-
-        </form>
-      </div> -->
+        <div class="container">
+          <div class="form">
+            <div class="contact-info">
+              <div class="info">
+                <div class="information">
+                  <img
+                    src="./assets/email.png"
+                    alt="icon"
+                    class="icon contact-icon email-icon"
+                  />
+                  <p><a href="mailto:lupitavalle713@gmail.com">lupitavalle713@gmail.com</a></p>
+                </div>
+                <div class="information">
+                  <img
+                    src="./assets/linkedin.png"
+                    alt="LinkedIn icon"
+                    class="icon"
+                  />
+                  <p><a href="https://www.linkedin.com/in/lupita-valle/">LinkedIn</a></p>
+                </div>
+                <div class="information">
+                  <img
+                    src="./assets/github.png"
+                    alt="My Github profile"
+                    class="icon"
+                  />
+                  <p><a href="https://github.com/lvalle-t">Github</a></p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="contact-form">
+              <form action="https://formsubmit.co/lupitavalle713@gmail.com" autocomplete="off" method="POST">
+                <div class="input-container">
+                  <input type="text" name="name" class="input">
+                  <label for="">Name</label>
+                  <span>Name</span>
+                </div>
+                <div class="input-container">
+                  <input type="email" name="email" class="input" >                    
+                  <label for="">Email</label>
+                  <span>Email</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" name="subject" class="input" >
+                  <label for="">Subject</label>
+                  <span>Subject</span>
+                </div>
+                <div class="input-container textarea">
+                  <textarea name="message" class="input"></textarea>
+                  <label for="">Message</label>
+                  <span>Message</span>
+                </div>
+                <button class="btn btn-color-2 project-btn"    type="submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
     </section>
-    <!-- footer -->
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- <p>Copyright &#169; 2023 Lupita Valle. All Rights Reserved.</p> -->
-    </footer>
     <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+</script>
   </body>
+  <script>
+    
+
+  </script>
 </html>
